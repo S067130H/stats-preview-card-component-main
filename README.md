@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/stat-preview-card-component-built-using-flexbox-UMEB-YdN5o](https://www.frontendmentor.io/solutions/stat-preview-card-component-built-using-flexbox-UMEB-YdN5o)
 - Live Site URL: [https://s067130h.github.io/stats-preview-card-component-main/](https://s067130h.github.io/stats-preview-card-component-main/)
 
 ## My process
