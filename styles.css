@@ -45,6 +45,7 @@ p {
 }
 
 img {
+    display: block;
     mix-blend-mode: multiply;
 }
 
