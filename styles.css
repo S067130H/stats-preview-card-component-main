@@ -1,100 +1,163 @@
 /* Variables */
 
 :root {
-    /* Colors */
-    --main-background: hsl(233, 47%, 7%);
-    --card-background: hsl(244, 38%, 16%);
-    --accent: hsl(277, 64%, 61%);
+	/* Colors */
+	--main-background: hsl(233, 47%, 7%);
+	--card-background: hsl(244, 38%, 16%);
+	--accent: hsl(277, 64%, 61%);
 
-    --main-heading-stats: hsl(0, 0%, 100%);
-    --main-paragraph: hsla(0, 0%, 100%, 0.75);
-    --stat-headings: hsla(0, 0%, 100%, 0.6);
+	--main-heading-stats: hsl(0, 0%, 100%);
+	--main-paragraph: hsla(0, 0%, 100%, 0.75);
+	--stat-headings: hsla(0, 0%, 100%, 0.6);
 }
 
 /* Core Styles */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-    background-color: var(--main-background);
+	background-color: var(--main-background);
 }
 
 main {
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	overflow: visible;
 }
 
 h1 {
-    color: var(--main-heading-stats);
-    font: 700 2.25rem "Inter";
-    margin-bottom: 1.625rem;
+	color: var(--main-heading-stats);
+	font: 700 2.25rem "Inter";
+	margin-bottom: 1.625rem;
 }
 
 p {
-    color: var(--main-paragraph);
-    font: 400 0.94rem "Inter";
-    line-height: 1.625rem;
-    margin-bottom: 4.5rem;
-    max-width: 23.375rem;
+	color: var(--main-paragraph);
+	font: 400 0.94rem "Inter";
+	line-height: 1.625rem;
+	margin-bottom: 4.5rem;
+	max-width: 23.375rem;
 }
 
 img {
-    display: block;
-    mix-blend-mode: multiply;
+	display: block;
+	mix-blend-mode: multiply;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+	position: fixed;
+	bottom: 0;
+    width: 100%;
 }
 
 /* Class Styles */
 
 .card {
-    border-radius: 0.5rem;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    overflow: hidden;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	overflow: hidden;
 }
 
 .content {
-    background-color: var(--card-background);
-    max-width: 35rem;
-    padding: 4.5rem 4.5rem 3.75rem;
+	background-color: var(--card-background);
+	max-width: 35rem;
+	padding: 4.5rem 4.5rem 3.75rem;
 }
 
 .accent {
-    color: var(--accent);
+	color: var(--accent);
 }
 
 .stats {
-    display: flex;
+	display: flex;
 }
 
 .stat {
-    margin-right: 3.75rem;
+	margin-right: 3.75rem;
 }
 
 .stat-value {
-    color: var(--main-heading-stats);
-    font: 700 1.5rem "Inter";
+	color: var(--main-heading-stats);
+	display: block;
+	font: 700 1.5rem "Inter";
+	margin-bottom: 0.125rem;
 }
 
 .stat-heading {
-    color: var(--stat-headings);
-    font: 400 0.75rem "Lexend Deca";
-    margin-bottom: 0;
-    text-transform: uppercase;
+	color: var(--stat-headings);
+	font: 400 0.75rem "Lexend Deca";
+	margin-bottom: 0;
+	text-transform: uppercase;
 }
 
 .overlay {
-    background-color: var(--accent);
+	background-color: var(--accent);
 }
 
-.attribution {}
+.attribution {
+	color: hsl(0, 0%, 100%);
+	font: 400 0.8rem "Inter";
+	text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+	main {
+		height: auto;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.card {
+		margin: 5.5rem 1.5rem;
+		width: min-content;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	main {
+		height: auto;
+	}
+
+	h1 {
+		font-size: 1.75rem;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+
+	p {
+		margin-bottom: 2.5rem;
+		text-align: center;
+	}
+
+	.card {
+		margin: 5.5rem 1.5rem;
+		width: max-content;
+	}
+
+	.content {
+		padding: 2.5rem 2rem 2rem;
+		width: 100%;
+	}
+
+	.stats {
+		flex-direction: column;
+	}
+
+    .stat {
+        margin-right: 0;
+		text-align: center;
+    }
+
+	.stat + .stat {
+		margin-top: 1.5rem;
+	}
+}
