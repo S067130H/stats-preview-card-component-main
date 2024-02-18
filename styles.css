@@ -54,7 +54,7 @@ img {
 footer {
 	position: fixed;
 	bottom: 0;
-    width: 100%;
+	width: 100%;
 }
 
 /* Class Styles */
@@ -153,10 +153,10 @@ footer {
 		flex-direction: column;
 	}
 
-    .stat {
-        margin-right: 0;
+	.stat {
+		margin-right: 0;
 		text-align: center;
-    }
+	}
 
 	.stat + .stat {
 		margin-top: 1.5rem;
