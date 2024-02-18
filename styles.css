@@ -80,14 +80,14 @@ footer {
 }
 
 .stat {
-	margin-right: 3.75rem;
+	margin-right: 4rem;
 }
 
 .stat-value {
 	color: var(--main-heading-stats);
 	display: block;
 	font: 700 1.5rem "Inter";
-	margin-bottom: 0.125rem;
+	margin-bottom: 0.2rem;
 }
 
 .stat-heading {
