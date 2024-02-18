@@ -39,12 +39,12 @@ h1 {
 p {
     color: var(--main-paragraph);
     font: 400 0.94rem "Inter";
+    line-height: 1.625rem;
     margin-bottom: 4.5rem;
 }
 
 img {
     mix-blend-mode: multiply;
-    object-fit: cover;
 }
 
 footer {
