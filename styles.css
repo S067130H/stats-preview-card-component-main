@@ -41,6 +41,7 @@ p {
     font: 400 0.94rem "Inter";
     line-height: 1.625rem;
     margin-bottom: 4.5rem;
+    max-width: 23.375rem;
 }
 
 img {
